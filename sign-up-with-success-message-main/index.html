@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <div id="container-subscribe">
+      <div class="flex">
+        <div class="lado-form">
+          <div class="info-title">
+            <h1 class="title"> Stay updated!</h1>
+            <span class="sub-title">Join 60,000+ product managers receiving monthly updates on:</span>
+          </div>
+  
+          <div class="sub-title-list">
+            <span><img src="./assets/images/icon-list.svg">Product discovery and building what matters</span>
+            <span><img src="./assets/images/icon-list.svg">Measuring to ensure updates are a success</span>
+            <span><img src="./assets/images/icon-list.svg">And much more!</span>
+          </div>
+  
+          <div class="form">
+            <span>Email address<span class="required">Valid Email Required</span></span>
+            <input type="email" name="email" placeholder="email@company.com" id="campoEmail" onblur="validateEmail()" required>
+            <button class="button-subscribe">Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+        <div class="img-ilustrativa">
+          <img class="img-desktop" src="./assets/images/illustration-sign-up-desktop.svg" style="height: 400px; width: 265px;">
+        </div>
+      </div>
+  </div>
+
+  <div id="container-sucess">
+    <div class="sub-container-sucess">
+      <img src="./assets/images/icon-success.svg">
+      <div class="container-sucess-title">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span class="emailUser"></span> 
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button id="dismiss-message">Dismiss message</button>
+    </div>
+  </div>
+
+
+  <!-- Sign-up form start -->
+<!--
+  Stay updated!
+
+  Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+<!---
+  Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
